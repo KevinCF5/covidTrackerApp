@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import SidePanel from "./Components/SidePanel";
+import MapView from "./Components/MapView";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App-left">
+        <SidePanel />
+      </div>
+
+      <div className="App-right">
+        <h2>Map</h2>
+        {/*  */}
+
+        <MapView />
+
+        <h2>Chart</h2>
+        {/* Chart.js */}
+      </div>
     </div>
   );
 }

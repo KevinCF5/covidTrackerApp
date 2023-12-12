@@ -1,0 +1,14 @@
+.side-panel {
+  overflow: scroll;
+  height: 100%;
+}
+
+.tabs {
+  width: 100%;
+  padding: 25px;
+  font-family: sans-serif;
+}
+
+.country-flag {
+  width: 10%;
+}
